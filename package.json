@@ -1,0 +1,18 @@
+{
+  "name": "utility-css",
+  "version": "0.180606.1",
+  "description": "utility css class",
+  "scripts": {
+    "build": "stylus utility-css.styl -o utility-css.css",
+    "watch": "stylus -w utility-css.styl -o utility-css.css"
+  },
+  "author": {
+    "name": "KOBAYASHI atsushi",
+    "email": "kobaatsu@ao-neko.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "stylus": "^0.54.5",
+    "stylus-helpers": "0.0.14"
+  }
+}
