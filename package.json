@@ -4,6 +4,7 @@
   "description": "utility css class",
   "scripts": {
     "build": "stylus utility-css.styl -o utility-css.css",
+    "release": "npm run build && cleancss -f 'breaks:afterComment=on' -o utility-css.min.css utility-css.css",
     "watch": "stylus -w utility-css.styl -o utility-css.css"
   },
   "author": {
@@ -12,6 +13,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "clean-css-cli": "^4.1.11",
     "stylus": "^0.54.5",
     "stylus-helpers": "0.0.14"
   }
