@@ -1,19 +1,21 @@
 {
   "name": "utility-css",
-  "version": "0.180606.1",
-  "description": "utility css class",
+  "version": "0.0.1",
+  "description": "utility css classes",
   "scripts": {
-    "build": "stylus utility-css.styl -o utility-css.css",
-    "release": "npm run build && cleancss -f 'breaks:afterComment=on' -o utility-css.min.css utility-css.css",
-    "watch": "stylus -w utility-css.styl -o utility-css.css"
+    "develop": "stylus -w utility-css.styl -o utility-css.css",
+    "mqpack": "mqpacker -s utility-css.css utility-css.css",
+    "build": "stylus utility-css.styl -o utility-css.css && npm run mqpack",
+    "release": "npm run build && cleancss -O2 -f 'breaks:afterComment=on' -o utility-css.min.css utility-css.css"
   },
   "author": {
     "name": "KOBAYASHI atsushi",
-    "email": "kobaatsu@ao-neko.com"
+    "email": "kobaatsu@gmail.com"
   },
   "license": "MIT",
   "devDependencies": {
     "clean-css-cli": "^4.1.11",
+    "css-mqpacker": "^6.0.2",
     "stylus": "^0.54.5",
     "stylus-helpers": "0.0.14"
   }
