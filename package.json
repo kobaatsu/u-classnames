@@ -4,8 +4,8 @@
   "description": "utility css classes",
   "scripts": {
     "develop": "stylus -w utility-css.styl -o utility-css.css",
-    "mqpack": "mqpacker -s utility-css.css utility-css.css",
-    "build": "stylus utility-css.styl -o utility-css.css && npm run mqpack",
+    "postcss": "postcss utility-css.css -o utility-css.css",
+    "build": "stylus utility-css.styl -o utility-css.css && npm run postcss",
     "release": "npm run build && cleancss -O2 -f 'breaks:afterComment=on' -o utility-css.min.css utility-css.css"
   },
   "author": {
@@ -14,8 +14,11 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^8.6.1",
     "clean-css-cli": "^4.1.11",
     "css-mqpacker": "^6.0.2",
+    "postcss-cli": "^5.0.0",
+    "postcss-sorting": "^3.1.0",
     "stylus": "^0.54.5",
     "stylus-helpers": "0.0.16"
   }
