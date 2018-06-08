@@ -17,6 +17,6 @@
     "clean-css-cli": "^4.1.11",
     "css-mqpacker": "^6.0.2",
     "stylus": "^0.54.5",
-    "stylus-helpers": "0.0.14"
+    "stylus-helpers": "0.0.16"
   }
 }
