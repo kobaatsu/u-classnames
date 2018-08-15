@@ -14,8 +14,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.1.0",
-    "clean-css-cli": "^4.2.0",
+    "autoprefixer": "^9.1.1",
+    "clean-css-cli": "^4.2.1",
     "css-mqpacker": "^7.0.0",
     "postcss-cli": "^6.0.0",
     "postcss-sorting": "^4.0.0",

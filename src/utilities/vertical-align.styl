@@ -1,0 +1,19 @@
+for al in (bl baseline) ('t' top) ('m' middle) ('b' bottom) (tb text-bottom) (tt text-top)
+  className = _utPrefix + -va + al[0]
+  .{className}
+    vertical-align al[1]
+  .{className}-xs
+    +xs()
+      vertical-align al[1]
+  .{className}-sm
+    +sm()
+      vertical-align al[1]
+  .{className}-md
+    +md()
+      vertical-align al[1]
+  .{className}-lg
+    +lg()
+      vertical-align al[1]
+  .{className}-xl
+    +xl()
+      vertical-align al[1]
