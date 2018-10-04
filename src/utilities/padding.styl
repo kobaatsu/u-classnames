@@ -1,6 +1,8 @@
 for i in 0..20
   .{_utPrefix}-p{i * 5}
-    p i * 5
+    padding (i * 5)px
+  .{_utPrefix}-pt{i * 5}
+    pt i * 5
   .{_utPrefix}-pr{i * 5}
     pr i * 5
   .{_utPrefix}-pb{i * 5}
@@ -13,7 +15,10 @@ for i in 0..20
     px i * 5
 
   .{_utPrefix}-p{i * 5}-xs
-    p-xs i * 5
+    +xs()
+      padding (i * 5)px
+  .{_utPrefix}-pt{i * 5}-xs
+    pt-xs i * 5
   .{_utPrefix}-pr{i * 5}-xs
     pr-xs i * 5
   .{_utPrefix}-pb{i * 5}-xs
@@ -26,7 +31,10 @@ for i in 0..20
     px-xs i * 5
 
   .{_utPrefix}-p{i * 5}-sm
-    p-sm i * 5
+    +sm()
+      padding (i * 5)px
+  .{_utPrefix}-pt{i * 5}-sm
+    pt-sm i * 5
   .{_utPrefix}-pr{i * 5}-sm
     pr-sm i * 5
   .{_utPrefix}-pb{i * 5}-sm
@@ -39,7 +47,10 @@ for i in 0..20
     px-sm i * 5
 
   .{_utPrefix}-p{i * 5}-md
-    p-md i * 5
+    +md()
+      padding (i * 5)px
+  .{_utPrefix}-pt{i * 5}-md
+    pt-md i * 5
   .{_utPrefix}-pr{i * 5}-md
     pr-md i * 5
   .{_utPrefix}-pb{i * 5}-md
@@ -52,7 +63,10 @@ for i in 0..20
     px-md i * 5
 
   .{_utPrefix}-p{i * 5}-lg
-    p-lg i * 5
+    +lg()
+      padding (i * 5)px
+  .{_utPrefix}-pt{i * 5}-lg
+    pt-lg i * 5
   .{_utPrefix}-pr{i * 5}-lg
     pr-lg i * 5
   .{_utPrefix}-pb{i * 5}-lg
@@ -66,7 +80,10 @@ for i in 0..20
 
 
   .{_utPrefix}-p{i * 5}-xl
-    p-xl i * 5
+    +xl()
+      padding (i * 5)px
+  .{_utPrefix}-pt{i * 5}-xl
+    pt-xl i * 5
   .{_utPrefix}-pr{i * 5}-xl
     pr-xl i * 5
   .{_utPrefix}-pb{i * 5}-xl

@@ -1,0 +1,19 @@
+for dp in ('b' block) ('i' inline) ('t' table) ('f' flex) ('g' grid) (li list-item) (tr table-row) (tc table-cell) (n none) (ib inline-block) ('if' inline-flex)
+  className = _utPrefix + -d + dp[0]
+  .{className}
+    display dp[1]
+  .{className}-xs
+    +xs()
+      display dp[1]
+  .{className}-sm
+    +sm()
+      display dp[1]
+  .{className}-md
+    +md()
+      display dp[1]
+  .{className}-lg
+    +lg()
+      display dp[1]
+  .{className}-xl
+    +xl()
+      display dp[1]

@@ -1,0 +1,19 @@
+for p in 0 1
+  className = _utPrefix + -fxs + p
+  .{className}
+    flex-shrink p
+  .{className}-xs
+    +xs()
+      flex-shrink p
+  .{className}-sm
+    +sm()
+      flex-shrink p
+  .{className}-md
+    +md()
+      flex-shrink p
+  .{className}-lg
+    +lg()
+      flex-shrink p
+  .{className}-xl
+    +xl()
+      flex-shrink p

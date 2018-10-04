@@ -1,0 +1,19 @@
+for p in ('' wrap) ('n' nowrap)
+  className = _utPrefix + -fxw + p[0]
+  .{className}
+    flex-wrap p[1]
+  .{className}-xs
+    +xs()
+      flex-wrap p[1]
+  .{className}-sm
+    +sm()
+      flex-wrap p[1]
+  .{className}-md
+    +md()
+      flex-wrap p[1]
+  .{className}-lg
+    +lg()
+      flex-wrap p[1]
+  .{className}-xl
+    +xl()
+      flex-wrap p[1]

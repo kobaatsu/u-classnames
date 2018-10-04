@@ -1,0 +1,19 @@
+for p in ('s' flex-start) ('e' flex-end) ('c' center) (bt space-between) (ar space-around)
+  className = _utPrefix + -jc + p[0]
+  .{className}
+    justify-content p[1]
+  .{className}-xs
+    +xs()
+      justify-content p[1]
+  .{className}-sm
+    +sm()
+      justify-content p[1]
+  .{className}-md
+    +md()
+      justify-content p[1]
+  .{className}-lg
+    +lg()
+      justify-content p[1]
+  .{className}-xl
+    +xl()
+      justify-content p[1]
