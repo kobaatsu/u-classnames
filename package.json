@@ -1,18 +1,30 @@
 {
   "name": "utility-css",
   "version": "0.0.1",
-  "description": "utility css classes",
+  "description": "utility classes",
   "scripts": {
     "develop": "stylus -w utility-css.styl -o utility-css.css",
     "postcss": "postcss utility-css.css -o utility-css.css",
     "build": "stylus utility-css.styl -o utility-css.css && npm run postcss",
     "release": "npm run build && cleancss -O2 -f 'breaks:afterComment=on' -o utility-css.min.css utility-css.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobaatsu/utility-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kobaatsu/utility-css/issues"
+  },
+  "keywords": [
+    "stylus"
+  ],
   "author": {
     "name": "KOBAYASHI atsushi",
     "email": "kobaatsu@gmail.com"
   },
   "license": "MIT",
+  "main": "utility-css.styl",
+  "homepage": "https://github.com/kobaatsu/utility-css#readme",
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "clean-css-cli": "^4.2.1",
