@@ -1,0 +1,19 @@
+for p in ('s' flex-start) ('e' flex-end) ('c' center) (bt space-between) (ar space-around) (st stretch)
+  className = _utPrefix + -ac + p[0]
+  .{className}
+    align-content p[1]
+  .{className}-xs
+    +xs()
+      align-content p[1]
+  .{className}-sm
+    +sm()
+      align-content p[1]
+  .{className}-md
+    +md()
+      align-content p[1]
+  .{className}-lg
+    +lg()
+      align-content p[1]
+  .{className}-xl
+    +xl()
+      align-content p[1]

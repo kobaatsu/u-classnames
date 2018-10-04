@@ -1,18 +1,37 @@
 {
   "name": "utility-css",
-  "version": "0.180606.1",
-  "description": "utility css class",
+  "version": "0.0.1",
+  "description": "utility classes",
   "scripts": {
-    "build": "stylus utility-css.styl -o utility-css.css",
-    "watch": "stylus -w utility-css.styl -o utility-css.css"
+    "develop": "stylus -w utility-css.styl -o utility-css.css",
+    "postcss": "postcss utility-css.css -o utility-css.css",
+    "build": "stylus utility-css.styl -o utility-css.css && npm run postcss",
+    "release": "npm run build && cleancss -O2 -f 'breaks:afterComment=on' -o utility-css.min.css utility-css.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobaatsu/utility-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kobaatsu/utility-css/issues"
+  },
+  "keywords": [
+    "stylus"
+  ],
   "author": {
     "name": "KOBAYASHI atsushi",
-    "email": "kobaatsu@ao-neko.com"
+    "email": "kobaatsu@gmail.com"
   },
   "license": "MIT",
+  "main": "utility-css.styl",
+  "homepage": "https://github.com/kobaatsu/utility-css#readme",
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "clean-css-cli": "^4.2.1",
+    "css-mqpacker": "^7.0.0",
+    "postcss-cli": "^6.0.0",
+    "postcss-sorting": "^4.0.0",
     "stylus": "^0.54.5",
-    "stylus-helpers": "0.0.14"
+    "stylus-helpers": "0.0.18"
   }
 }

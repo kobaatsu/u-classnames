@@ -1,0 +1,19 @@
+for al in ('s' static) ('r' relative) ('a' absolute) ('f' fixed)
+  className = _utPrefix + -po + al[0]
+  .{className}
+    position al[1]
+  .{className}-xs
+    +xs()
+      position al[1]
+  .{className}-sm
+    +sm()
+      position al[1]
+  .{className}-md
+    +md()
+      position al[1]
+  .{className}-lg
+    +lg()
+      position al[1]
+  .{className}-xl
+    +xl()
+      position al[1]

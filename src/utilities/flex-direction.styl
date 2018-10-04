@@ -1,0 +1,19 @@
+for p in ('r' row) ('c' column) (rr row-reverse) (cr column-reverse)
+  className = _utPrefix + -fxd + p[0]
+  .{className}
+    flex-direction p[1]
+  .{className}-xs
+    +xs()
+      flex-direction p[1]
+  .{className}-sm
+    +sm()
+      flex-direction p[1]
+  .{className}-md
+    +md()
+      flex-direction p[1]
+  .{className}-lg
+    +lg()
+      flex-direction p[1]
+  .{className}-xl
+    +xl()
+      flex-direction p[1]

@@ -1,0 +1,19 @@
+for al in ('r' right) ('c' center) ('l' left) ('j' justify)
+  className = _utPrefix + -ta + al[0]
+  .{className}
+    text-align al[1]
+  .{className}-xs
+    +xs()
+      text-align al[1]
+  .{className}-sm
+    +sm()
+      text-align al[1]
+  .{className}-md
+    +md()
+      text-align al[1]
+  .{className}-lg
+    +lg()
+      text-align al[1]
+  .{className}-xl
+    +xl()
+      text-align al[1]

@@ -1,0 +1,19 @@
+for al in ('r' right) ('l' left) ('n' none)
+  className = _utPrefix + -fl + al[0]
+  .{className}
+    float al[1]
+  .{className}-xs
+    +xs()
+      float al[1]
+  .{className}-sm
+    +sm()
+      float al[1]
+  .{className}-md
+    +md()
+      float al[1]
+  .{className}-lg
+    +lg()
+      float al[1]
+  .{className}-xl
+    +xl()
+      float al[1]

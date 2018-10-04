@@ -1,0 +1,19 @@
+for al in ('r' right) ('l' left) ('b' both) ('n' none)
+  className = _utPrefix + -cl + al[0]
+  .{className}
+    clear al[1]
+  .{className}-xs
+    +xs()
+      clear al[1]
+  .{className}-sm
+    +sm()
+      clear al[1]
+  .{className}-md
+    +md()
+      clear al[1]
+  .{className}-lg
+    +lg()
+      clear al[1]
+  .{className}-xl
+    +xl()
+      clear al[1]

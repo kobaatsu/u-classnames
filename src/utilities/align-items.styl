@@ -1,0 +1,19 @@
+for p in ('s' flex-start) ('e' flex-end) ('c' center) (bl baseline) (st stretch)
+  className = _utPrefix + -ai + p[0]
+  .{className}
+    align-items p[1]
+  .{className}-xs
+    +xs()
+      align-items p[1]
+  .{className}-sm
+    +sm()
+      align-items p[1]
+  .{className}-md
+    +md()
+      align-items p[1]
+  .{className}-lg
+    +lg()
+      align-items p[1]
+  .{className}-xl
+    +xl()
+      align-items p[1]
