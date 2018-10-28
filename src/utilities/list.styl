@@ -1,0 +1,140 @@
+num()
+  counter-reset num
+  > li
+    counter-increment num
+    &::before
+      content counter(num)' '
+
+.{_utPrefix}-list-num
+  num()
+  &-xs
+    +xs()
+      num()
+  &-sm
+    +sm()
+      num()
+  &-md
+    +md()
+      num()
+  &-lg
+    +lg()
+      num()
+  &-xl
+    +xl()
+      num()
+
+num-pr()
+  counter-reset num
+  > li
+    counter-increment num
+    &::before
+      content counter(num) '. '
+
+.{_utPrefix}-list-num-pr
+  num-pr()
+  &-xs
+    +xs()
+      num-pr()
+  &-sm
+    +sm()
+      num-pr()
+  &-md
+    +md()
+      num-pr()
+  &-lg
+    +lg()
+      num-pr()
+  &-xl
+    +xl()
+      num-pr()
+
+num-per()
+  counter-reset num
+  > li
+    counter-increment num
+    &::before
+      content '(' counter(num) ') '
+
+.{_utPrefix}-list-num-per
+  num-per()
+  &-xs
+    +xs()
+      num-per()
+  &-sm
+    +sm()
+      num-per()
+  &-md
+    +md()
+      num-per()
+  &-lg
+    +lg()
+      num-per()
+  &-xl
+    +xl()
+      num-per()
+
+kana()
+  list-style-type katakana
+  padding-left 1.5em
+
+.{_utPrefix}-list-kana
+  kana()
+  &-xs
+    +xs()
+      kana()
+  &-sm
+    +sm()
+      kana()
+  &-md
+    +md()
+      kana()
+  &-lg
+    +lg()
+      kana()
+  &-xl
+    +xl()
+      kana()
+
+disc()
+  list-style-type disc
+  padding-left 1.5em
+
+.{_utPrefix}-list-disc
+  disc()
+  &-xs
+    +xs()
+      disc()
+  &-sm
+    +sm()
+      disc()
+  &-md
+    +md()
+      disc()
+  &-lg
+    +lg()
+      disc()
+  &-xl
+    +xl()
+      disc()
+
+circle()
+  list-style-type circle
+  padding-left 1.5em
+
+.{_utPrefix}-list-circle
+  circle()
+  &-xs
+    +xs()
+      circle()
+  &-sm
+    +sm()
+      circle()
+  &-md
+    +md()
+      circle()
+  &-lg
+    +lg()
+      circle()
+  &-xl
+    +xl()
+      circle()

@@ -287,6 +287,45 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.u-list-num {
+  counter-reset: num;
+}
+.u-list-num > li {
+  counter-increment: num;
+}
+.u-list-num > li::before {
+  content: counter(num) ' ';
+}
+.u-list-num-pr {
+  counter-reset: num;
+}
+.u-list-num-pr > li {
+  counter-increment: num;
+}
+.u-list-num-pr > li::before {
+  content: counter(num) '. ';
+}
+.u-list-num-per {
+  counter-reset: num;
+}
+.u-list-num-per > li {
+  counter-increment: num;
+}
+.u-list-num-per > li::before {
+  content: '(' counter(num) ') ';
+}
+.u-list-kana {
+  padding-left: 1.5em;
+  list-style-type: katakana;
+}
+.u-list-disc {
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+.u-list-circle {
+  padding-left: 1.5em;
+  list-style-type: circle;
+}
 .u-m-20 {
   margin: -20px;
 }
@@ -1692,6 +1731,45 @@
   .u-jcar-sm {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .u-list-num-sm {
+    counter-reset: num;
+  }
+  .u-list-num-sm > li {
+    counter-increment: num;
+  }
+  .u-list-num-sm > li::before {
+    content: counter(num) ' ';
+  }
+  .u-list-num-pr-sm {
+    counter-reset: num;
+  }
+  .u-list-num-pr-sm > li {
+    counter-increment: num;
+  }
+  .u-list-num-pr-sm > li::before {
+    content: counter(num) '. ';
+  }
+  .u-list-num-per-sm {
+    counter-reset: num;
+  }
+  .u-list-num-per-sm > li {
+    counter-increment: num;
+  }
+  .u-list-num-per-sm > li::before {
+    content: '(' counter(num) ') ';
+  }
+  .u-list-kana-sm {
+    padding-left: 1.5em;
+    list-style-type: katakana;
+  }
+  .u-list-disc-sm {
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+  .u-list-circle-sm {
+    padding-left: 1.5em;
+    list-style-type: circle;
   }
   .u-m-20-sm {
     margin: -20px;
@@ -3100,6 +3178,45 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .u-list-num-md {
+    counter-reset: num;
+  }
+  .u-list-num-md > li {
+    counter-increment: num;
+  }
+  .u-list-num-md > li::before {
+    content: counter(num) ' ';
+  }
+  .u-list-num-pr-md {
+    counter-reset: num;
+  }
+  .u-list-num-pr-md > li {
+    counter-increment: num;
+  }
+  .u-list-num-pr-md > li::before {
+    content: counter(num) '. ';
+  }
+  .u-list-num-per-md {
+    counter-reset: num;
+  }
+  .u-list-num-per-md > li {
+    counter-increment: num;
+  }
+  .u-list-num-per-md > li::before {
+    content: '(' counter(num) ') ';
+  }
+  .u-list-kana-md {
+    padding-left: 1.5em;
+    list-style-type: katakana;
+  }
+  .u-list-disc-md {
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+  .u-list-circle-md {
+    padding-left: 1.5em;
+    list-style-type: circle;
+  }
   .u-m-20-md {
     margin: -20px;
   }
@@ -4506,6 +4623,45 @@
   .u-jcar-lg {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .u-list-num-lg {
+    counter-reset: num;
+  }
+  .u-list-num-lg > li {
+    counter-increment: num;
+  }
+  .u-list-num-lg > li::before {
+    content: counter(num) ' ';
+  }
+  .u-list-num-pr-lg {
+    counter-reset: num;
+  }
+  .u-list-num-pr-lg > li {
+    counter-increment: num;
+  }
+  .u-list-num-pr-lg > li::before {
+    content: counter(num) '. ';
+  }
+  .u-list-num-per-lg {
+    counter-reset: num;
+  }
+  .u-list-num-per-lg > li {
+    counter-increment: num;
+  }
+  .u-list-num-per-lg > li::before {
+    content: '(' counter(num) ') ';
+  }
+  .u-list-kana-lg {
+    padding-left: 1.5em;
+    list-style-type: katakana;
+  }
+  .u-list-disc-lg {
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+  .u-list-circle-lg {
+    padding-left: 1.5em;
+    list-style-type: circle;
   }
   .u-m-20-lg {
     margin: -20px;
@@ -5914,6 +6070,45 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .u-list-num-xl {
+    counter-reset: num;
+  }
+  .u-list-num-xl > li {
+    counter-increment: num;
+  }
+  .u-list-num-xl > li::before {
+    content: counter(num) ' ';
+  }
+  .u-list-num-pr-xl {
+    counter-reset: num;
+  }
+  .u-list-num-pr-xl > li {
+    counter-increment: num;
+  }
+  .u-list-num-pr-xl > li::before {
+    content: counter(num) '. ';
+  }
+  .u-list-num-per-xl {
+    counter-reset: num;
+  }
+  .u-list-num-per-xl > li {
+    counter-increment: num;
+  }
+  .u-list-num-per-xl > li::before {
+    content: '(' counter(num) ') ';
+  }
+  .u-list-kana-xl {
+    padding-left: 1.5em;
+    list-style-type: katakana;
+  }
+  .u-list-disc-xl {
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+  .u-list-circle-xl {
+    padding-left: 1.5em;
+    list-style-type: circle;
+  }
   .u-m-20-xl {
     margin: -20px;
   }
@@ -7320,6 +7515,45 @@
   .u-jcar-xs {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .u-list-num-xs {
+    counter-reset: num;
+  }
+  .u-list-num-xs > li {
+    counter-increment: num;
+  }
+  .u-list-num-xs > li::before {
+    content: counter(num) ' ';
+  }
+  .u-list-num-pr-xs {
+    counter-reset: num;
+  }
+  .u-list-num-pr-xs > li {
+    counter-increment: num;
+  }
+  .u-list-num-pr-xs > li::before {
+    content: counter(num) '. ';
+  }
+  .u-list-num-per-xs {
+    counter-reset: num;
+  }
+  .u-list-num-per-xs > li {
+    counter-increment: num;
+  }
+  .u-list-num-per-xs > li::before {
+    content: '(' counter(num) ') ';
+  }
+  .u-list-kana-xs {
+    padding-left: 1.5em;
+    list-style-type: katakana;
+  }
+  .u-list-disc-xs {
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+  .u-list-circle-xs {
+    padding-left: 1.5em;
+    list-style-type: circle;
   }
   .u-m-20-xs {
     margin: -20px;
